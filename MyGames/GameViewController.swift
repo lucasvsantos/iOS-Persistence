@@ -28,6 +28,7 @@ class GameViewController: UIViewController {
         if game == nil {
             game = Game(context: context)
         }
+        
         game.name = tfName.text
         game.console = tfConsole.text
         try? context.save()
